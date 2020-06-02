@@ -1,0 +1,78 @@
+@import 'src/styles/includes/includes';
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.title,
+.description {
+  text-align: center;
+  color: $main_color;
+}
+
+.title {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.15;
+
+  a {
+    text-decoration: none;
+    color: $accent_color;
+
+    @include haf {
+      text-decoration: underline;
+    }
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin-top: 3rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  margin: 1rem;
+  border: 1px solid $border_color;
+  border-radius: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: $main_color;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  flex-basis: 45%;
+
+  @include haf {
+    border-color: $accent_color;
+    color: $accent_color;
+  }
+
+  h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}

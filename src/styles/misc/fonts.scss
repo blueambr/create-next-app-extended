@@ -1,0 +1,137 @@
+/*
+@font-face {
+  font-family: '#{$font_name} Thin';
+  src: url('../../fonts/#{$font-path_name}-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Thin Italic';
+  src: url('../../fonts/#{$font-path_name}-ThinItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Extra Light';
+  src: url('../../fonts/#{$font-path_name}-ExtraLight.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Extra Light Italic';
+  src: url('../../fonts/#{$font-path_name}-ExtraLightItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+*/
+
+@font-face {
+  font-family: '#{$font_name} Light';
+  src: url('../../fonts/#{$font-path_name}-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Light Italic';
+  src: url('../../fonts/#{$font-path_name}-LightItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Regular';
+  src: url('../../fonts/#{$font-path_name}-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Regular Italic';
+  src:
+    url('../../fonts/#{$font-path_name}-RegularItalic.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+@font-face {
+  font-family: '#{$font_name} Medium';
+  src: url('../../fonts/#{$font-path_name}-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Medium Italic';
+  src: url('../../fonts/#{$font-path_name}-MediumItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+*/
+
+@font-face {
+  font-family: '#{$font_name} Semi Bold';
+  src: url('../../fonts/#{$font-path_name}-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Semi Bold Italic';
+  src:
+    url('../../fonts/#{$font-path_name}-SemiBoldItalic.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Bold';
+  src: url('../../fonts/#{$font-path_name}-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Bold Italic';
+  src: url('../../fonts/#{$font-path_name}-BoldItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Extra Bold';
+  src: url('../../fonts/#{$font-path_name}-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Extra Bold Italic';
+  src:
+    url('../../fonts/#{$font-path_name}-ExtraBoldItalic.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+@font-face {
+  font-family: '#{$font_name} Black';
+  src: url('../../fonts/#{$font-path_name}-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '#{$font_name} Black Italic';
+  src: url('../../fonts/#{$font-path_name}-BlackItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+*/

@@ -1,0 +1,169 @@
+// Retina
+@mixin retina {
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+    screen and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+// Breakpoints, Mobile-first
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+// Breakpoints, Desktop-first
+
+/*
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1439px) {
+    @content;
+  }
+}
+*/
+
+// Actions
+@mixin center($axis: xy) {
+  position: absolute;
+
+  @if $axis == xy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $axis == x {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @if $axis == y {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin img() {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// States
+@mixin haf {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+// Fonts
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+@mixin font($style: 400) {
+  /*
+  @if $style == 100 {
+    font-family: "#{$font_name} Thin", sans-serif;
+  }
+
+  @if $style == "100it" {
+    font-family: "#{$font_name} Thin Italic", sans-serif;
+  }
+
+  @if $style == 200 {
+    font-family: "#{$font_name} Extra Light", sans-serif;
+  }
+
+  @if $style == "200it" {
+    font-family: "#{$font_name} Extra Light Italic", sans-serif;
+  }
+  */
+
+  @if $style == 300 {
+    font-family: '#{$font_name} Light', sans-serif;
+  }
+
+  @if $style == '300it' {
+    font-family: '#{$font_name} Light Italic', sans-serif;
+  }
+
+  @if $style == 400 {
+    font-family: '#{$font_name} Regular', sans-serif;
+  }
+
+  @if $style == '400it' {
+    font-family: '#{$font_name} Regular Italic', sans-serif;
+  }
+
+  /*
+  @if $style == 500 {
+    font-family: "#{$font_name} Medium", sans-serif;
+  }
+
+  @if $style == "500it" {
+    font-family: "#{$font_name} Medium Italic", sans-serif;
+  }
+  */
+
+  @if $style == 600 {
+    font-family: '#{$font_name} Semi Bold', sans-serif;
+  }
+
+  @if $style == '600it' {
+    font-family: '#{$font_name} Semi Bold Italic', sans-serif;
+  }
+
+  @if $style == 700 {
+    font-family: '#{$font_name} Bold', sans-serif;
+  }
+
+  @if $style == '700it' {
+    font-family: '#{$font_name} Bold Italic', sans-serif;
+  }
+
+  @if $style == 800 {
+    font-family: '#{$font_name} Extra Bold', sans-serif;
+  }
+
+  @if $style == '800it' {
+    font-family: '#{$font_name} Extra Bold', sans-serif;
+  }
+
+  /*
+  @if $style == 900 {
+    font-family: "#{$font_name} Black", sans-serif;
+  }
+
+  @if $style == "900it" {
+    font-family: "#{$font_name} Black", sans-serif;
+  }
+  */
+}
