@@ -20,6 +20,7 @@
     ],
     "at-rule-no-unknown": null,
     "color-hex-length": "long",
+    "declaration-colon-newline-after": null,
     "declaration-empty-line-before": "never",
     "font-family-no-missing-generic-family-keyword": null,
     "length-zero-no-unit": null,
@@ -150,102 +151,86 @@
         "parameter": "font",
         "hasBlock": false
       },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "hasBlock": false
+      },
       "declarations",
       {
-        "type": "rule",
-        "selector": "&:hover"
-      },
-      {
-        "type": "rule",
-        "selector": "&:active"
-      },
-      {
-        "type": "rule",
-        "selector": "&:focus"
-      },
-      {
-        "type": "rule",
-        "selector": "&:visited"
-      },
-      {
-        "type": "rule",
-        "selector": "&:checked"
-      },
-      {
-        "type": "rule",
-        "selector": "^&:out-of-range|^&:r(e(ad-(only|write)))"
-      },
-      {
         "type": "at-rule",
         "name": "include",
-        "parameter": "tablet",
-        "hasBlock": true
-      },
-      {
-        "type": "at-rule",
-        "name": "include",
-        "parameter": "laptop",
-        "hasBlock": true
-      },
-      {
-        "type": "at-rule",
-        "name": "include",
-        "parameter": "desktop",
-        "hasBlock": true
-      },
-      {
-        "type": "at-rule",
-        "name": "include",
-        "parameter": "retina",
         "hasBlock": true
       },
       {
         "type": "rule",
-        "selector": "&::before"
+        "selector": "^&:hover"
       },
       {
         "type": "rule",
-        "selector": "&::after"
+        "selector": "^&:active"
       },
       {
         "type": "rule",
-        "selector": "^&::\\w"
+        "selector": "^&:focus"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "haf",
+        "hasBlock": true
       },
       {
         "type": "rule",
-        "selector": "^&:first-(child|of-type)"
+        "selector": "^&:checked"
       },
       {
         "type": "rule",
-        "selector": "^&:nth-((last-)*(child|of-type))"
+        "selector": "^&::before"
       },
       {
         "type": "rule",
-        "selector": "^&:last-(child|of-type)"
+        "selector": "^&::after"
       },
       {
         "type": "rule",
-        "selector": "^&:o(nly-(child|of-type))"
+        "selector": "^&:first-child"
       },
       {
         "type": "rule",
-        "selector": "^&_[^_][\\w'-]+"
+        "selector": "^&:nth-child"
       },
       {
         "type": "rule",
-        "selector": "^&\\."
+        "selector": "^&:nth-last-child"
       },
       {
         "type": "rule",
-        "selector": "^&__"
+        "selector": "^&:last-child"
       },
       {
         "type": "rule",
-        "selector": "^&-"
+        "selector": "^&__(.*)"
       },
       {
         "type": "rule",
-        "selector": "^."
+        "selector": "^&-(.*)"
+      },
+      {
+        "type": "rule",
+        "selector": "^\\.(.*)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_(.*)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&\\.(.*)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&(.*)"
       }
     ]
   }

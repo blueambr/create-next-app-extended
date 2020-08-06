@@ -7,6 +7,12 @@
 }
 
 // Breakpoints, Mobile-first
+@mixin mobile {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (min-width: 768px) {
     @content;
@@ -28,8 +34,14 @@
 // Breakpoints, Desktop-first
 
 /*
-@mixin mobile {
-  @media screen and (max-width: 767px) {
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1439px) {
     @content;
   }
 }
@@ -40,8 +52,8 @@
   }
 }
 
-@mixin laptop {
-  @media screen and (max-width: 1439px) {
+@mixin mobile {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }

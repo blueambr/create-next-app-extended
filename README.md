@@ -1,6 +1,6 @@
-# Create Next App eXtended v.1.0.0
+# Create Next App eXtended v.1.1.0
 
-> "next": "9.4.4"
+> "next": "9.5.1"
 
 ### Content
 
@@ -65,7 +65,7 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CN
 
 ```
 "dependencies": {
-  "next": "9.4.4",
+  "next": "9.5.1",
   "normalize.css": "^8.0.1",
   "react": "16.13.1",
   "react-dom": "16.13.1",
@@ -73,27 +73,27 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CN
 },
 "devDependencies": {
   "babel-eslint": "^10.1.0",
-  "eslint": "^7.1.0",
-  "eslint-config-airbnb": "^18.1.0",
+  "eslint": "^7.6.0",
+  "eslint-config-airbnb": "^18.2.0",
   "eslint-config-prettier": "^6.11.0",
   "eslint-config-react-app": "^5.2.1",
   "eslint-loader": "^4.0.2",
-  "eslint-plugin-flowtype": "^5.1.3",
-  "eslint-plugin-import": "^2.20.2",
-  "eslint-plugin-jsx-a11y": "^6.2.3",
-  "eslint-plugin-prettier": "^3.1.3",
-  "eslint-plugin-react": "^7.20.0",
-  "eslint-plugin-react-hooks": "^4.0.4",
+  "eslint-plugin-flowtype": "^5.2.0",
+  "eslint-plugin-import": "^2.22.0",
+  "eslint-plugin-jsx-a11y": "^6.3.1",
+  "eslint-plugin-prettier": "^3.1.4",
+  "eslint-plugin-react": "^7.20.5",
+  "eslint-plugin-react-hooks": "^4.0.8",
   "husky": "^4.2.5",
-  "lint-staged": "^10.2.7",
+  "lint-staged": "^10.2.11",
   "prettier": "^2.0.5",
   "pretty-quick": "^2.0.1",
-  "sass": "^1.26.7",
-  "stylelint": "^13.5.0",
+  "sass": "^1.26.10",
+  "stylelint": "^13.6.1",
   "stylelint-config-standard": "^20.0.0",
-  "stylelint-order": "^4.0.0",
-  "stylelint-webpack-plugin": "^2.0.0"
-}
+  "stylelint-order": "^4.1.0",
+  "stylelint-webpack-plugin": "^2.1.0"
+},
 ```
 
 ## License

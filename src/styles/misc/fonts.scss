@@ -4,6 +4,7 @@
   src: url('../../fonts/#{$font-path_name}-Thin.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url('../../fonts/#{$font-path_name}-ThinItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
   src: url('../../fonts/#{$font-path_name}-ExtraLight.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -25,6 +28,7 @@
   src: url('../../fonts/#{$font-path_name}-ExtraLightItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 */
 
@@ -33,6 +37,7 @@
   src: url('../../fonts/#{$font-path_name}-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -40,6 +45,7 @@
   src: url('../../fonts/#{$font-path_name}-LightItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -47,15 +53,16 @@
   src: url('../../fonts/#{$font-path_name}-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: '#{$font_name} Regular Italic';
-  src:
-    url('../../fonts/#{$font-path_name}-RegularItalic.ttf')
+  src: url('../../fonts/#{$font-path_name}-RegularItalic.ttf')
     format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 /*
@@ -64,6 +71,7 @@
   src: url('../../fonts/#{$font-path_name}-Medium.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -71,6 +79,7 @@
   src: url('../../fonts/#{$font-path_name}-MediumItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 */
 
@@ -79,15 +88,16 @@
   src: url('../../fonts/#{$font-path_name}-SemiBold.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: '#{$font_name} Semi Bold Italic';
-  src:
-    url('../../fonts/#{$font-path_name}-SemiBoldItalic.ttf')
+  src: url('../../fonts/#{$font-path_name}-SemiBoldItalic.ttf')
     format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -95,6 +105,7 @@
   src: url('../../fonts/#{$font-path_name}-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -102,6 +113,7 @@
   src: url('../../fonts/#{$font-path_name}-BoldItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -109,15 +121,16 @@
   src: url('../../fonts/#{$font-path_name}-ExtraBold.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: '#{$font_name} Extra Bold Italic';
-  src:
-    url('../../fonts/#{$font-path_name}-ExtraBoldItalic.ttf')
+  src: url('../../fonts/#{$font-path_name}-ExtraBoldItalic.ttf')
     format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 /*
@@ -126,6 +139,7 @@
   src: url('../../fonts/#{$font-path_name}-Black.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -133,5 +147,6 @@
   src: url('../../fonts/#{$font-path_name}-BlackItalic.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+  font-display: fallback;
 }
 */
