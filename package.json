@@ -1,10 +1,10 @@
 {
-  "name": "@vgmqt/create-next-app-extended",
+  "name": "@vgerasimovich/create-next-app-extended",
   "version": "1.2.0",
   "description": "An extended version of Create Next App with linters, styles adjustment, pre-commit and more",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VGMQT/create-next-app-extended.git"
+    "url": "https://github.com/vgerasimovich/create-next-app-extended.git"
   },
   "keywords": [
     "create-next-app",
@@ -19,7 +19,7 @@
   ],
   "author": "Vlad Gerasimovich <vlad.gerasimovich.micro@outlook.com>",
   "license": "MIT",
-  "bugs": "https://github.com/VGMQT/create-next-app-extended/issues",
+  "bugs": "https://github.com/vgerasimovich/create-next-app-extended/issues",
   "dependencies": {
     "next": "10.0.0",
     "normalize.css": "^8.0.1",
