@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -9,11 +10,14 @@ const Footer = () => {
         rel="noopener noreferrer"
       >
         Powered by{' '}
-        <img
-          className={styles.logo}
-          src="images/vercel.svg"
-          alt="Vercel Logo"
-        />
+        <div className={styles.logo}>
+          <Image
+            src="/images/vercel.svg"
+            alt="Vercel logo"
+            width={71}
+            height={16}
+          />
+        </div>
       </a>
     </footer>
   );
