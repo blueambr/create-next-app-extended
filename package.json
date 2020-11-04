@@ -1,6 +1,6 @@
 {
   "name": "@vgerasimovich/create-next-app-extended",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "An extended version of Create Next App with linters, styles adjustment, pre-commit and more",
   "repository": {
     "type": "git",
@@ -58,7 +58,7 @@
   "browserslist": [
     "> 0.5%",
     "last 2 versions",
-    "IE 11"
+    "not dead"
   ],
   "lint-staged": {
     "src/**/*.{js,jsx}": [
