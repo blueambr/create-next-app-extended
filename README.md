@@ -1,4 +1,4 @@
-# Create Next App eXtended v.1.2.2
+# Create Next App eXtended v.1.2.3
 
 > "next": "10.0.5"
 
@@ -15,7 +15,7 @@
 1. `git clone`
 2. `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git` to update the origin remote with your own repository / `git remote rm origin` to remove the origin remote
 3. `npm i`
-4. `npm run start`
+4. `npm run dev`
 5. Navigate to your localhost address
    (default is http://localhost:3000/)
 
@@ -31,10 +31,9 @@ It contains all the recent Next.js features +
 
 - Basic styles adjustment: `"normalize.css": "^8.0.1"` and `./src/styles/misc`
 - Set of SCSS/Sass mixins and variables in `./src/styles/includes`
-- Pre-configured and customizable [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/) pushed in the webpack config through the `next.config.js`
+- Pre-configured and customizable [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
 - Pre-commit feature with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
-- [uniqid](https://github.com/adamhalasz/uniqid)
-- `jsconfig.json`, that includes [absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
+- `jsconfig.json`, which includes [absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
 
 ## Pre-commit
 
@@ -46,13 +45,13 @@ _CNAX_ has a pre-commit script, based on [Husky](https://github.com/typicode/hus
     "pretty-quick --pattern './src/**/*.{js,jsx}'",
     "eslint './src/**/*.{js,jsx}' --fix"
   ],
-  "src/**/*.{scss,sass,css}": [
-    "stylelint './src/**/*.{scss,sass,css}' --fix"
+  "src/**/*.{css,sass,scss}": [
+    "stylelint './src/**/*.{css,sass,scss}' --fix"
   ]
 },
 "husky": {
   "hooks": {
-    "pre-commit": "lint-staged && npm run build && git add ."
+    "pre-commit": "lint-staged && git add ."
   }
 }
 ```
@@ -71,12 +70,13 @@ You **should** `npx npm-check-updates -u && npm i && npm audit fix -f` as _CNAX_
   "react-dom": "17.0.1"
 },
 "devDependencies": {
+  "@typescript-eslint/eslint-plugin": "^4.12.0",
+  "@typescript-eslint/parser": "^4.12.0",
   "babel-eslint": "^10.1.0",
   "eslint": "^7.17.0",
   "eslint-config-airbnb": "^18.2.1",
   "eslint-config-prettier": "^7.1.0",
   "eslint-config-react-app": "^6.0.0",
-  "eslint-loader": "^4.0.2",
   "eslint-plugin-flowtype": "^5.2.0",
   "eslint-plugin-import": "^2.22.1",
   "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -91,7 +91,7 @@ You **should** `npx npm-check-updates -u && npm i && npm audit fix -f` as _CNAX_
   "stylelint": "^13.8.0",
   "stylelint-config-standard": "^20.0.0",
   "stylelint-order": "^4.1.0",
-  "stylelint-webpack-plugin": "^2.1.1"
+  "typescript": "^4.1.3"
 },
 ```
 

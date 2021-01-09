@@ -1,5 +1,5 @@
 {
-  "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
+  "extends": ["airbnb", "prettier", "prettier/react", "react-app"],
   "plugins": ["prettier"],
   "rules": {
     "camelcase": 0,
@@ -11,52 +11,50 @@
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
     "import/no-extraneous-dependencies": 0,
-    // Gets in the way of the absolute imports
-    "import/no-unresolved": 0,
-    //--
+    "import/no-unresolved": 0, // Gets in the way of the absolute imports
     "react/jsx-filename-extension": 0,
     "react/jsx-props-no-spreading": 0,
     "react/jsx-tag-spacing": [
       1,
       {
-        "closingSlash": "never",
-        "beforeSelfClosing": "always",
         "afterOpening": "never",
-        "beforeClosing": "never"
+        "beforeClosing": "never",
+        "beforeSelfClosing": "always",
+        "closingSlash": "never"
       }
     ],
+    "react/no-danger": 0, // dangerouslySetInnerHTML is important in some situations
     "react/prop-types": 0,
 
-    /* "expression" or "declaration"
-    Choose your own or delete to disable */
+    /**
+     * "expression" or "declaration"
+     * Choose your own or delete to disable
+     */
     "func-style": ["error", "expression"],
-
-    // Prettier does this
-    //"indent": ["error", 2],
-    //"quotes": ["error", "single"]
-
-    // dangerouslySetInnerHTML is important for some projects
-    "react/no-danger": 0,
+    //**
 
     // react-use-form-state {...label} takes care of this
     "jsx-a11y/control-has-associated-label": 0,
     "jsx-a11y/label-has-associated-control": 0,
     "jsx-a11y/label-has-for": 0,
-    //--
+    //**
 
     // We use Next.js
     "jsx-a11y/anchor-is-valid": 0,
     "react/react-in-jsx-scope": 0
-    //--
+    //**
+
+    // Prettier does this
+    // "indent": ["error", 2],
+    // "quotes": ["error", "single"]
   },
   "globals": {
-    "window": true,
+    "Blob": true,
+    "FileReader": true,
+    "FormData": true,
     "document": true,
     "localStorage": true,
-    "FormData": true,
-    "FileReader": true,
-    "Blob": true,
-    "navigator": true
-  },
-  "parser": "babel-eslint"
+    "navigator": true,
+    "window": true
+  }
 }
