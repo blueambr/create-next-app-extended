@@ -1,7 +1,6 @@
 import styles from './Welcome.module.scss';
 
-const Welcome = () => {
-  return (
+const Welcome = () => (
     <div className="container">
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -44,6 +43,5 @@ const Welcome = () => {
       </main>
     </div>
   );
-};
 
 export default Welcome;

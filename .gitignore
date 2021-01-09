@@ -1,11 +1,8 @@
 # Dependencies
 node_modules
-package-lock.json
 npm-debug.log*
 .pnp
 .pnp.js
-yarn-debug.log*
-yarn-error.log*
 
 # OS or Editor folders
 *.sublime-grunt.cache

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
-const Layout = ({ children }) => {
-  return (
+const Layout = ({ children }) => (
     <>
       <Head>
         <meta charSet="utf-8" />
@@ -14,6 +13,5 @@ const Layout = ({ children }) => {
       {children}
     </>
   );
-};
 
 export default Layout;
