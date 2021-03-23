@@ -59,7 +59,7 @@ _CNAX_ has a pre-commit feature, based on [Husky](https://github.com/typicode/hu
 **pre-commit** in `.husky/pre-commit`:
 
 ```
-lint-staged
+npm run lint
 ```
 
 And it can be configured in any preferrable way. Enjoy!
