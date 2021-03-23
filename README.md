@@ -4,11 +4,11 @@
 
 ### Content
 
-**[How to launch](#how-to-launch)**
-**[What is this?](#what-is-this)**
-**[Pre-commit](#pre-commit)**
-**[Dependencies](#dependencies)**
-**[License](#license)**
+- **[How to launch](#how-to-launch)**
+- **[What is this?](#what-is-this)**
+- **[Pre-commit](#pre-commit)**
+- **[Dependencies](#dependencies)**
+- **[License](#license)**
 
 ## How to launch:
 
