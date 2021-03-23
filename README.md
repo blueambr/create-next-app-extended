@@ -1,6 +1,6 @@
-# Create Next App eXtended v.1.2.3
+# Create Next App eXtended v.1.3.0
 
-> "next": "10.0.5"
+> "next": "10.0.9"
 
 ### Content
 
@@ -18,10 +18,12 @@
 4. `npm run dev`
 5. Navigate to your localhost address
    (default is http://localhost:3000/)
+6. `npm run build` to create a build for production
+7. `npm run start` to run the production build
 
-For more info visit the [Next.js Getting Started section](https://nextjs.org/docs/getting-started).
+For more info visit [Next.js Getting Started](https://nextjs.org/docs/getting-started).
 
-P.S. Don't forget to remove extra info like keywords, repository, etc. from `package.json`.
+P.S. Don't forget to remove extra info like keywords, repository etc. from `package.json`.
 
 ## What is this?
 
@@ -29,15 +31,18 @@ _Create Next App eXtended_ or _CNAX_ is an opinionated version of [Create Next A
 
 It contains all the recent Next.js features +
 
-- Basic styles adjustment: `"normalize.css": "^8.0.1"` and `./src/styles/misc`
-- Set of SCSS/Sass mixins and variables in `./src/styles/includes`
-- Pre-configured and customizable [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
+- Basic styles adjustment and some of Bulma modules in `src/styles/global` and `src/styles/misc`
+- Set of Sass/SCSS mixins and variables in `src/styles/includes`
+- Pre-configured and customizable [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) and [Stylelint](https://stylelint.io/)
 - Pre-commit feature with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
+- `next.config.js`, which includes [eslint-webpack-plugin](https://github.com/webpack-contrib/eslint-webpack-plugin) and [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin)
 - `jsconfig.json`, which includes [absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
 
 ## Pre-commit
 
-_CNAX_ has a pre-commit script, based on [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). It looks like this:
+_CNAX_ has a pre-commit feature, based on [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). It looks like this:
+
+**lint-staged** in `package.json`:
 
 ```
 "lint-staged": {
@@ -48,55 +53,57 @@ _CNAX_ has a pre-commit script, based on [Husky](https://github.com/typicode/hus
   "src/**/*.{css,sass,scss}": [
     "stylelint './src/**/*.{css,sass,scss}' --fix"
   ]
-},
-"husky": {
-  "hooks": {
-    "pre-commit": "lint-staged && git add ."
-  }
 }
+```
+
+**pre-commit** in `.husky/pre-commit`:
+
+```
+lint-staged
 ```
 
 And it can be configured in any preferrable way. Enjoy!
 
 ## Dependencies
 
-You **should** `npx npm-check-updates -u && npm i && npm audit fix -f` as _CNAX_ will always be ok working with the latest versions of the dependencies, so it is **strongly recommended**. If anything goes wrong, visit the [Next.js docs](https://nextjs.org/docs) for explanations.
-
 ```
 "dependencies": {
-  "next": "10.0.5",
+  "bulma": "^0.9.2",
+  "next": "10.0.9",
   "normalize.css": "^8.0.1",
   "react": "17.0.1",
   "react-dom": "17.0.1"
 },
 "devDependencies": {
-  "@typescript-eslint/eslint-plugin": "^4.12.0",
-  "@typescript-eslint/parser": "^4.12.0",
+  "@typescript-eslint/eslint-plugin": "^4.19.0",
+  "@typescript-eslint/parser": "^4.19.0",
   "babel-eslint": "^10.1.0",
-  "eslint": "^7.17.0",
+  "eslint": "^7.22.0",
   "eslint-config-airbnb": "^18.2.1",
-  "eslint-config-prettier": "^7.1.0",
+  "eslint-config-prettier": "^8.1.0",
   "eslint-config-react-app": "^6.0.0",
-  "eslint-plugin-flowtype": "^5.2.0",
+  "eslint-plugin-flowtype": "^5.4.0",
   "eslint-plugin-import": "^2.22.1",
   "eslint-plugin-jsx-a11y": "^6.4.1",
   "eslint-plugin-prettier": "^3.3.1",
   "eslint-plugin-react": "^7.22.0",
   "eslint-plugin-react-hooks": "^4.2.0",
-  "husky": "^4.3.7",
-  "lint-staged": "^10.5.3",
+  "eslint-webpack-plugin": "^2.5.2",
+  "husky": "^5.2.0",
+  "lint-staged": "^10.5.4",
   "prettier": "^2.2.1",
   "pretty-quick": "^3.1.0",
-  "sass": "^1.32.2",
-  "stylelint": "^13.8.0",
-  "stylelint-config-standard": "^20.0.0",
+  "sass": "^1.32.8",
+  "stylelint": "^13.12.0",
+  "stylelint-config-standard": "^21.0.0",
   "stylelint-order": "^4.1.0",
-  "typescript": "^4.1.3"
-},
+  "stylelint-webpack-plugin": "^2.1.1",
+  "typescript": "^4.2.3"
+}
 ```
 
 ## License
 
-Copyright © 2020 - 2021, based on Create Next App by Vercel, Inc.
+Copyright © 2020 - 2021 Vlad Gerasimovich <vlad.gerasimovich.micro@outlook.com> Create Next App by Vercel Inc.
 
-Licensed under the MIT license.
+Licensed under the ISC license.

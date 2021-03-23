@@ -1,4 +1,4 @@
-@import 'src/styles/includes/includes';
+@import 'src/styles/includes';
 
 .main {
   display: flex;
@@ -6,25 +6,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: rem(50px) 0;
+  padding: rem(50) 0;
 }
 
 .title,
 .description {
   text-align: center;
-  color: $main_color;
 }
 
 .title {
-  margin: 0;
   font-size: 4rem;
-  line-height: 1.15;
+  color: $color-title;
 
   a {
     text-decoration: none;
-    color: $accent_color;
+    color: $color-primary;
 
-    @include haf {
+    @include hf {
       text-decoration: underline;
     }
   }
@@ -33,6 +31,7 @@
 .description {
   font-size: 1.5rem;
   line-height: 1.5;
+  color: $color-text;
 }
 
 .grid {
@@ -43,36 +42,33 @@
   max-width: 800px;
   margin-top: 3rem;
 
-  @media (max-width: 600px) {
+  @include touch {
     flex-direction: column;
     width: 100%;
   }
 }
 
 .card {
+  flex-basis: 45%;
   padding: 1.5rem;
   margin: 1rem;
-  border: 1px solid $border_color;
   border-radius: 10px;
-  text-align: left;
-  text-decoration: none;
-  color: $main_color;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  flex-basis: 45%;
+  background-image: $color-gradient;
 
-  @include haf {
-    border-color: $accent_color;
-    color: $accent_color;
+  @include hf {
+    h3 {
+      text-decoration: underline;
+    }
   }
 
   h3 {
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: $color-title;
   }
 
   p {
-    margin: 0;
     font-size: 1.25rem;
-    line-height: 1.5;
+    color: $color-text;
   }
 }

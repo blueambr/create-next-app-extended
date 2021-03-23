@@ -1,11 +1,28 @@
-$font_name: 'Open Sans';
-$font-path_name: 'OpenSans';
+// Bulma initial
+$gap: 20px;
+$tablet: 769px;
+$desktop: 960px + (2 * $gap);
+$widescreen: 1152px + (2 * $gap);
+$fullhd: 1344px + (2 * $gap);
 
-// Static colors
-$white: #ffffff;
+// Bulma container
+$container-max-width: $fullhd;
+$container-padding: 15px;
+$container-offset: (2 * $gap) - (2 * $container-padding);
 
-// Project colors
-$main_color: #212121;
-$accent_color: #0070f3;
-$bg_color: $white;
-$border_color: #eaeaea;
+// Bulma section
+$section-padding: rem(20) 0;
+$section-padding-medium: rem(30) 0;
+$section-padding-desktop: rem(40) 0;
+$section-padding-large: rem(50) 0;
+
+// Fonts
+$font-name: 'Comfortaa';
+$font-path-name: $font-name;
+
+// Colors
+$color-primary: #008fff;
+$color-bg: #000000;
+$color-title: #e2f1f8;
+$color-text: #cfd8dc;
+$color-gradient: linear-gradient(to right, #0575e6, #021b79);

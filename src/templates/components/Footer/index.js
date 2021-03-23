@@ -11,7 +11,7 @@ const Footer = () => (
       Powered by{' '}
       <div className={styles.logo}>
         <Image
-          src="/images/vercel.svg"
+          src="/assets/images/vercel.svg"
           alt="Vercel logo"
           width={71}
           height={16}
