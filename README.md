@@ -1,4 +1,4 @@
-# Create Next App eXtended v.1.4.0
+# Create Next App eXtended v.2.0.0
 
 > "next": "10.1.3"
 
