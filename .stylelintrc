@@ -227,6 +227,10 @@
       },
       {
         "type": "rule",
+        "selector": "^&:not(.*)"
+      },
+      {
+        "type": "rule",
         "selector": "^&__(.*)"
       },
       {

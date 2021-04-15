@@ -8,25 +8,29 @@
 }
 
 html {
-  min-height: 100%;
   font-size: 16px;
 }
 
 html,
 body {
   width: 100%;
+  min-height: 100%;
 }
 
 body {
   @include font();
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  overflow-x: hidden;
   line-height: 1.42;
   color: $color-text;
   background-color: $color-bg;
   -webkit-font-smoothing: antialiased;
+}
+
+#__next {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 footer {
@@ -34,7 +38,7 @@ footer {
   margin-top: auto;
 }
 
-:global .container {
+.container {
   padding: 0 $container-padding;
 }
 

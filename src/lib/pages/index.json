@@ -1,0 +1,43 @@
+{
+  "page": {
+    "title": "Create Next App eXtended"
+  },
+  "welcome": {
+    "title": "Welcome to <a href='https://nextjs.org'>Next.js!</a>",
+    "subtitle": "Get started on the Next Big Thing using Create Next App eXtended!",
+    "columns": [
+      {
+        "key": "gridDocumentation",
+        "href": "https://nextjs.org/docs",
+        "title": "Documentation",
+        "desc": "Find in-depth information about Next.js features and API."
+      },
+      {
+        "key": "gridLearn",
+        "href": "https://nextjs.org/learn",
+        "title": "Learn",
+        "desc": "Learn about Next.js in an interactive course with quizzes!"
+      },
+      {
+        "key": "gridExamples",
+        "href": "https://github.com/vercel/next.js/tree/master/examples",
+        "title": "Examples",
+        "desc": "Discover and deploy boilerplate example Next.js projects."
+      },
+      {
+        "key": "gridDeploy",
+        "href": "https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+        "title": "Deploy",
+        "desc": "Instantly deploy your Next.js site to a public URL with Vercel."
+      }
+    ]
+  },
+  "footer": {
+    "href": "https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+    "text": "Powered by",
+    "logo": {
+      "src": "/assets/images/vercel.svg",
+      "alt": "Vercel logo"
+    }
+  }
+}

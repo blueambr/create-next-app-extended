@@ -1,6 +1,6 @@
-# Create Next App eXtended v.1.3.0
+# Create Next App eXtended v.1.4.0
 
-> "next": "10.0.9"
+> "next": "10.1.3"
 
 ### Content
 
@@ -69,27 +69,27 @@ And it can be configured in any preferrable way. Enjoy!
 ```
 "dependencies": {
   "bulma": "^0.9.2",
-  "next": "10.0.9",
+  "next": "10.1.3",
   "normalize.css": "^8.0.1",
-  "react": "17.0.1",
-  "react-dom": "17.0.1"
+  "react": "17.0.2",
+  "react-dom": "17.0.2"
 },
 "devDependencies": {
-  "@typescript-eslint/eslint-plugin": "^4.19.0",
-  "@typescript-eslint/parser": "^4.19.0",
+  "@typescript-eslint/eslint-plugin": "^4.22.0",
+  "@typescript-eslint/parser": "^4.22.0",
   "babel-eslint": "^10.1.0",
-  "eslint": "^7.22.0",
+  "eslint": "^7.24.0",
   "eslint-config-airbnb": "^18.2.1",
-  "eslint-config-prettier": "^8.1.0",
+  "eslint-config-prettier": "^8.2.0",
   "eslint-config-react-app": "^6.0.0",
-  "eslint-plugin-flowtype": "^5.4.0",
+  "eslint-plugin-flowtype": "^5.7.0",
   "eslint-plugin-import": "^2.22.1",
   "eslint-plugin-jsx-a11y": "^6.4.1",
-  "eslint-plugin-prettier": "^3.3.1",
-  "eslint-plugin-react": "^7.22.0",
+  "eslint-plugin-prettier": "^3.4.0",
+  "eslint-plugin-react": "^7.23.2",
   "eslint-plugin-react-hooks": "^4.2.0",
-  "eslint-webpack-plugin": "^2.5.2",
-  "husky": "^5.2.0",
+  "eslint-webpack-plugin": "^2.5.3",
+  "husky": "^6.0.0",
   "lint-staged": "^10.5.4",
   "prettier": "^2.2.1",
   "pretty-quick": "^3.1.0",
@@ -98,7 +98,7 @@ And it can be configured in any preferrable way. Enjoy!
   "stylelint-config-standard": "^21.0.0",
   "stylelint-order": "^4.1.0",
   "stylelint-webpack-plugin": "^2.1.1",
-  "typescript": "^4.2.3"
+  "typescript": "^4.2.4"
 }
 ```
 

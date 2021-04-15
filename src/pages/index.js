@@ -1,14 +1,19 @@
-import Layout from 'templates/layout';
-import Welcome from 'templates/components/Welcome';
-import Footer from 'templates/components/Footer';
+import data from 'lib/pages';
+import Layout from '@/layout';
+import Welcome from '@/sections/Welcome';
+import Footer from '@/sections/Footer';
 
-export default function Home() {
+const Home = () => {
+  const { page, welcome, footer } = data;
+
   return (
     <>
-      <Layout>
-        <Welcome />
-        <Footer />
+      <Layout data={page}>
+        <Welcome data={welcome} />
+        <Footer data={footer} />
       </Layout>
     </>
   );
-}
+};
+
+export default Home;

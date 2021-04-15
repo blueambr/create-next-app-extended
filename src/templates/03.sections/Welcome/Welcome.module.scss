@@ -1,0 +1,65 @@
+@import 'src/styles/includes';
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  color: $color-title;
+
+  a {
+    text-decoration: none;
+    color: $color-primary;
+
+    @include hf {
+      text-decoration: underline;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: $color-text;
+}
+
+.card {
+  @include trans;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  @include hf {
+    border-color: $color-primary;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &::before {
+    @include trans;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: $color-gradient;
+    content: '';
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $color-title;
+  }
+
+  &__desc {
+    font-size: 1.25rem;
+    color: $color-text;
+  }
+}
