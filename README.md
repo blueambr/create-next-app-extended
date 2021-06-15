@@ -27,7 +27,7 @@ P.S. Don't forget to remove extra info like keywords, repository etc. from `pack
 
 ## What is this?
 
-_Create Next App eXtended_ or _CNAX_ is an opinionated version of [Create Next App](https://nextjs.org/docs/getting-started#setup).
+_Create Next App eXtended_ or _CNAX_ is an opinionated version of [Create Next App](https://nextjs.org/docs/api-reference/create-next-app).
 
 It contains all the recent Next.js features +
 
@@ -68,42 +68,42 @@ And it can be configured in any preferrable way. Enjoy!
 
 ```
 "dependencies": {
-  "bulma": "^0.9.2",
-  "next": "10.1.3",
-  "normalize.css": "^8.0.1",
-  "react": "17.0.2",
-  "react-dom": "17.0.2"
+    "bulma": "^0.9.2",
+    "next": "11.0.0",
+    "normalize.css": "^8.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
 },
 "devDependencies": {
-  "@typescript-eslint/eslint-plugin": "^4.22.0",
-  "@typescript-eslint/parser": "^4.22.0",
+  "@typescript-eslint/eslint-plugin": "^4.27.0",
+  "@typescript-eslint/parser": "^4.27.0",
   "babel-eslint": "^10.1.0",
-  "eslint": "^7.24.0",
+  "eslint": "^7.28.0",
   "eslint-config-airbnb": "^18.2.1",
-  "eslint-config-prettier": "^8.2.0",
+  "eslint-config-prettier": "^8.3.0",
   "eslint-config-react-app": "^6.0.0",
-  "eslint-plugin-flowtype": "^5.7.0",
-  "eslint-plugin-import": "^2.22.1",
+  "eslint-plugin-flowtype": "^5.7.2",
+  "eslint-plugin-import": "^2.23.4",
   "eslint-plugin-jsx-a11y": "^6.4.1",
   "eslint-plugin-prettier": "^3.4.0",
-  "eslint-plugin-react": "^7.23.2",
+  "eslint-plugin-react": "^7.24.0",
   "eslint-plugin-react-hooks": "^4.2.0",
-  "eslint-webpack-plugin": "^2.5.3",
+  "eslint-webpack-plugin": "^2.5.4",
   "husky": "^6.0.0",
-  "lint-staged": "^10.5.4",
-  "prettier": "^2.2.1",
+  "lint-staged": "^11.0.0",
+  "prettier": "^2.3.1",
   "pretty-quick": "^3.1.0",
-  "sass": "^1.32.8",
-  "stylelint": "^13.12.0",
-  "stylelint-config-standard": "^21.0.0",
+  "sass": "^1.32.9",
+  "stylelint": "^13.13.1",
+  "stylelint-config-standard": "^22.0.0",
   "stylelint-order": "^4.1.0",
   "stylelint-webpack-plugin": "^2.1.1",
-  "typescript": "^4.2.4"
+  "typescript": "^4.3.2"
 }
 ```
 
 ## License
 
-Copyright © 2020 - 2021 Vlad Gerasimovich <vlad.gerasimovich.micro@outlook.com> Create Next App by Vercel Inc.
+Copyright © 2020 - 2021 Vlad Gerasimovich <hotepp@pm.me> Create Next App by Vercel Inc.
 
 Licensed under the ISC license.
