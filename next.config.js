@@ -2,6 +2,9 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config) => {
     config.plugins.push(
       new ESLintPlugin({
