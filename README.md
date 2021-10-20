@@ -1,4 +1,4 @@
-# Create Next App eXtended v.2.1.0
+# Create Next App eXtended v.2.1.1
 
 > "next": "11.1.2"
 
@@ -7,23 +7,34 @@
 - **[How to launch](#how-to-launch)**
 - **[What is this?](#what-is-this)**
 - **[Pre-commit](#pre-commit)**
+- **[Conventional Changelog](#conventional-changelog)**
 - **[Dependencies](#dependencies)**
 - **[License](#license)**
 
 ## How to launch:
 
-1. `git clone`
-2. `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git` to update the origin remote with your own repository / `git remote rm origin` to remove the origin remote
-3. `npm i` or `npm i --legacy-peer-deps`, if `npm i` throws errors
-4. `npm run dev`
-5. Navigate to your localhost address
-   (default is http://localhost:3000/)
-6. `npm run build` to create a build for production
-7. `npm run start` to run the production build
+### Cloning
+
+1. `git clone git@github.com:hotepp/create-next-app-extended.git next-big-thing`: cloning the repo
+2. `cd next-big-thing`: going to the cloned copy of the repo
+3. `sudo rm -R .git && sudo rm CHANGELOG.md`: removing everything git-related from the cloned repo; be careful with `sudo`, you only want to delete the `.git` folder with everything inside of it and the `CHANGELOG.md` file, but nothing more
+4. `git init`: creating our own git system
+5. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
+6. `git add .`: adding everything to our first git commit
+7. `git commit -m "init"`: making our first git commit
+8. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
+
+P.S. Don't forget to remove the extra info like keywords, repository, packages you won't be using, reset the version etc. in `package.json`.
+
+### Running
+
+1. `npm i` or `npm i --legacy-peer-deps`, if `npm i` throws errors
+2. `npm run dev` to run the environment
+3. Navigate to your localhost address (default is http://localhost:3000/)
+4. `npm run build` to create a production build
+5. `npm start` to run the created production build
 
 For more info visit [Next.js Getting Started](https://nextjs.org/docs/getting-started).
-
-P.S. Don't forget to remove extra info like keywords, repository etc. from `package.json`.
 
 ## What is this?
 
@@ -37,6 +48,7 @@ It contains all the recent Next.js features +
 - Pre-commit feature with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
 - `next.config.js`, which includes [eslint-webpack-plugin](https://github.com/webpack-contrib/eslint-webpack-plugin) and [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin)
 - `jsconfig.json`, which includes [absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
+- Automatically generated `CHANGELOG.md` file using `npm version` script, if [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) approach is being used
 
 ## Pre-commit
 
@@ -63,6 +75,21 @@ npm run lint
 ```
 
 And it can be configured in any preferrable way. Enjoy!
+
+## Conventional Changelog
+
+I recommend using the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) approach for committing your work to Git. If you use it, your commits will be very descriptive and themselves could tell the story of your project to anyone.
+
+On top of this [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli) was built. I included the CLI version of it here, in the `version` npm script. It generates a nice `CHANGELOG.md` for your nice commits.
+
+The recommended commit approach for using this would be:
+
+1. Make changes
+2. Commit those changes
+3. Run the `npm version [patch|minor|major]` command (more about it [here](https://docs.npmjs.com/cli/v6/commands/npm-version))
+4. Push
+
+The `npm version` script will automatically bump the project's version in `package.json` and commit it, together with our newly generated `CHANGELOG.md`.
 
 ## Dependencies
 

@@ -51,9 +51,8 @@
     "build": "next build",
     "dev": "next",
     "lint": "lint-staged",
-    "open": "next start",
     "prepare": "husky install",
-    "start": "next",
+    "start": "next start",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "browserslist": [
