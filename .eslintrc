@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "prettier", "react-app"],
+  "extends": ["next", "prettier"],
   "plugins": ["prettier"],
   "rules": {
     "camelcase": 0,
@@ -10,44 +10,52 @@
     "no-undef": 0,
     "no-underscore-dangle": 0,
     "no-unused-vars": 0,
-    "import/extensions": 0, // Gets in the way of the absolute imports
-    "import/imports-first": ["error", "absolute-first"],
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": 0, // Gets in the way of the absolute imports
-    "import/no-extraneous-dependencies": 0,
-    "import/no-unresolved": 0, // Gets in the way of the absolute imports
-    "react/jsx-filename-extension": 0,
-    "react/jsx-props-no-spreading": 0,
-    "react/jsx-tag-spacing": [
-      1,
-      {
-        "afterOpening": "never",
-        "beforeClosing": "never",
-        "beforeSelfClosing": "always",
-        "closingSlash": "never"
-      }
-    ],
-    "react/no-danger": 0, // dangerouslySetInnerHTML is important in some situations
-    "react/prop-types": 0,
 
     /**
-     * Can be "expression" or "declaration"
-     * Choose your own or delete to disable
+     * Can be "expression" or "declaration".
+     * Choose your own or delete to disable.
      */
     "func-style": ["error", "expression"],
 
-    // react-use-form-state {...label} takes care of this
-    "jsx-a11y/control-has-associated-label": 0,
-    "jsx-a11y/label-has-associated-control": 0,
-    "jsx-a11y/label-has-for": 0,
-
-    // We use Next.js
-    "jsx-a11y/anchor-is-valid": 0,
-    "react/react-in-jsx-scope": 0,
-
-    // Prettier does this too
+    // Prettier does this too.
     "indent": ["error", 2],
     "quotes": ["error", "single"]
+
+    // Enable, if needed.
+    // "import/extensions": 0, // Gets in the way of the absolute imports
+    // "import/imports-first": ["error", "absolute-first"],
+    // "import/newline-after-import": "error",
+    // "import/no-absolute-path": 0, // Gets in the way of the absolute imports
+    // "import/no-extraneous-dependencies": 0,
+    // "import/no-unresolved": 0, // Gets in the way of the absolute imports
+    // "react/jsx-filename-extension": 0,
+    // "react/jsx-props-no-spreading": 0,
+    // "react/jsx-tag-spacing": [
+    //   1,
+    //   {
+    //     "afterOpening": "never",
+    //     "beforeClosing": "never",
+    //     "beforeSelfClosing": "always",
+    //     "closingSlash": "never"
+    //   }
+    // ],
+    // "react/no-danger": 0, // dangerouslySetInnerHTML is important in some situations
+    // "react/prop-types": 0,
+
+    /**
+     * Enable, if needed.
+     * react-use-form-state {...label} takes care of this.
+     */
+    // "jsx-a11y/control-has-associated-label": 0,
+    // "jsx-a11y/label-has-associated-control": 0,
+    // "jsx-a11y/label-has-for": 0,
+
+    /**
+     * Enable, if needed.
+     * We use Next.js.
+     */
+    // "jsx-a11y/anchor-is-valid": 0,
+    // "react/react-in-jsx-scope": 0,
   },
   "globals": {
     "Blob": true,
