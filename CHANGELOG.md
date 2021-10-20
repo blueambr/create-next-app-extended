@@ -1,3 +1,13 @@
+# [2.1.0](https://github.com/hotepp/create-next-app-extended/compare/2.0.3...2.1.0) (2021-10-20)
+
+
+### Features
+
+* add conventional-changelog and version npm script ([91fc1e3](https://github.com/hotepp/create-next-app-extended/commit/91fc1e301efe2ea4481eb0b67df64ceefdc8eaec))
+* update dependencies; update .eslintrc config ([7580316](https://github.com/hotepp/create-next-app-extended/commit/75803167f361a6f73ff50395e32d3878e1e80049))
+
+
+
 ## [2.0.3](https://github.com/hotepp/create-next-app-extended/compare/2.0.2...2.0.3) (2021-08-02)
 
 
