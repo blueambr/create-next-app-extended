@@ -1,6 +1,6 @@
 {
   "name": "@hotepp/create-next-app-extended",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "An extended version of Create Next App with linters, styles adjustment, pre-commit and more",
   "repository": {
     "type": "git",
