@@ -1,4 +1,4 @@
-# Create Next App eXtended v.2.0.3
+# Create Next App eXtended v.2.1.0
 
 > "next": "11.1.2"
 
@@ -77,6 +77,7 @@ And it can be configured in any preferrable way. Enjoy!
 "devDependencies": {
   "@typescript-eslint/eslint-plugin": "^5.1.0",
   "@typescript-eslint/parser": "^5.1.0",
+  "conventional-changelog-cli": "^2.1.1",
   "eslint": "^8.0.1",
   "eslint-config-next": "^11.1.2",
   "eslint-config-prettier": "^8.3.0",

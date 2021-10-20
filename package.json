@@ -30,6 +30,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
+    "conventional-changelog-cli": "^2.1.1",
     "eslint": "^8.0.1",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
@@ -52,7 +53,8 @@
     "lint": "lint-staged",
     "open": "next start",
     "prepare": "husky install",
-    "start": "next"
+    "start": "next",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "browserslist": [
     "> 0.5%",
