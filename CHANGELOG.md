@@ -1,3 +1,12 @@
+## [2.1.3](https://github.com/hotepp/create-next-app-extended/compare/2.1.2...2.1.3) (2021-12-24)
+
+
+### Bug Fixes
+
+* update dependencies ([a755847](https://github.com/hotepp/create-next-app-extended/commit/a7558476721ca6e737c49af19c8ca8ebed8a1d22))
+
+
+
 ## [2.1.2](https://github.com/hotepp/create-next-app-extended/compare/2.1.1...2.1.2) (2021-10-27)
 
 
