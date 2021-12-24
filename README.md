@@ -1,6 +1,6 @@
-# Create Next App eXtended v.2.1.2
+# Create Next App eXtended v.2.1.3
 
-> "next": "12.0.1"
+> "next": "12.0.7"
 
 ### Content
 
@@ -97,30 +97,30 @@ The `npm version` script will automatically bump the project's version in `packa
 ```
 "dependencies": {
   "bulma": "^0.9.3",
-  "next": "12.0.1",
+  "next": "12.0.7",
   "normalize.css": "^8.0.1",
   "react": "17.0.2",
   "react-dom": "17.0.2"
 },
 "devDependencies": {
-  "@typescript-eslint/eslint-plugin": "^5.2.0",
-  "@typescript-eslint/parser": "^5.2.0",
+  "@typescript-eslint/eslint-plugin": "^5.8.0",
+  "@typescript-eslint/parser": "^5.8.0",
   "conventional-changelog-cli": "^2.1.1",
-  "eslint": "^8.1.0",
-  "eslint-config-next": "^12.0.1",
+  "eslint": "^8.5.0",
+  "eslint-config-next": "^12.0.7",
   "eslint-config-prettier": "^8.3.0",
   "eslint-plugin-prettier": "^4.0.0",
-  "eslint-webpack-plugin": "^3.1.0",
+  "eslint-webpack-plugin": "^3.1.1",
   "husky": "^7.0.4",
-  "lint-staged": "^11.2.6",
-  "prettier": "^2.4.1",
-  "pretty-quick": "^3.1.1",
-  "sass": "^1.43.4",
-  "stylelint": "^14.0.1",
-  "stylelint-config-standard-scss": "^2.0.0",
+  "lint-staged": "^12.1.4",
+  "prettier": "^2.5.1",
+  "pretty-quick": "^3.1.3",
+  "sass": "^1.45.1",
+  "stylelint": "^14.2.0",
+  "stylelint-config-standard-scss": "^3.0.0",
   "stylelint-order": "^5.0.0",
-  "stylelint-webpack-plugin": "^3.0.1",
-  "typescript": "^4.4.4"
+  "stylelint-webpack-plugin": "^3.1.0",
+  "typescript": "^4.5.4"
 }
 ```
 
