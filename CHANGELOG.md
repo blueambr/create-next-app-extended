@@ -1,3 +1,12 @@
+# [3.0.0](https://github.com/hotepp/create-next-app-extended/compare/2.1.3...3.0.0) (2022-01-04)
+
+
+### Features
+
+* add Storybook and update the project's structure to match it ([2487f0d](https://github.com/hotepp/create-next-app-extended/commit/2487f0d84e0ff2567cdf732bafe281eb5871e3aa))
+
+
+
 ## [2.1.3](https://github.com/hotepp/create-next-app-extended/compare/2.1.2...2.1.3) (2021-12-24)
 
 
