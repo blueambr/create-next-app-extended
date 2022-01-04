@@ -1,4 +1,4 @@
-import data from 'lib/pages';
+import data from '/src/lib/pages';
 import Layout from '@/layout';
 import Welcome from '@/sections/Welcome';
 import Footer from '@/sections/Footer';

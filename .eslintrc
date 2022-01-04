@@ -19,13 +19,14 @@
 
     // Prettier does this too.
     "indent": ["error", 2],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
 
     // Enable, if needed.
     // "import/extensions": 0, // Gets in the way of the absolute imports
     // "import/imports-first": ["error", "absolute-first"],
     // "import/newline-after-import": "error",
     // "import/no-absolute-path": 0, // Gets in the way of the absolute imports
+    "import/no-anonymous-default-export": 0
     // "import/no-extraneous-dependencies": 0,
     // "import/no-unresolved": 0, // Gets in the way of the absolute imports
     // "react/jsx-filename-extension": 0,

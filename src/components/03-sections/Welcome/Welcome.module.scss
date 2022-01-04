@@ -1,5 +1,9 @@
 @import 'src/styles/includes';
 
+.section {
+  background-color: $color-bg;
+}
+
 .title,
 .subtitle {
   text-align: center;
@@ -27,6 +31,7 @@
 .card {
   @include trans;
   position: relative;
+  z-index: 1;
   display: block;
   overflow: hidden;
   padding: 1.5rem;

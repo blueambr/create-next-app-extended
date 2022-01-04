@@ -4,15 +4,12 @@ const Welcome = ({ data }) => {
   const { title, subtitle, columns } = data;
 
   return (
-    <section className={styles.welcome}>
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.wrapper}>
           <section className="section">
             <div className="block">
-              <h1
-                className={styles.title}
-                dangerouslySetInnerHTML={{ __html: title }}
-              />
+              <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: title }} />
             </div>
             <div className="block">
               <p className={styles.subtitle}>{subtitle}</p>
@@ -24,16 +21,9 @@ const Welcome = ({ data }) => {
                 <div className="columns is-multiline">
                   {columns.map((column) => (
                     <div className="column is-half" key={column.key}>
-                      <a
-                        className={styles.card}
-                        href={column.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a className={styles.card} href={column.href} target="_blank" rel="noopener noreferrer">
                         <div className="block-sm">
-                          <h3 className={styles.card__title}>
-                            {column.title} &rarr;
-                          </h3>
+                          <h3 className={styles.card__title}>{column.title} &rarr;</h3>
                         </div>
                         <div className="block-sm">
                           <p className={styles.card__desc}>{column.desc}</p>

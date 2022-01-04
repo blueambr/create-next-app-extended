@@ -2,10 +2,10 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@/layout": ["templates/00.layout/index"],
-      "@/elements/*": ["templates/01.elements/*"],
-      "@/components/*": ["templates/02.components/*"],
-      "@/sections/*": ["templates/03.sections/*"]
+      "@/layout": ["components/00-layout/index"],
+      "@/elements/*": ["components/01-elements/*"],
+      "@/modules/*": ["components/02-modules/*"],
+      "@/sections/*": ["components/03-sections/*"]
     }
   },
   "include": ["src"]

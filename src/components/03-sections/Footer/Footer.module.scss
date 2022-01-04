@@ -3,6 +3,7 @@
 .footer {
   position: relative;
   border-top: 1px solid $color-primary;
+  background-color: $color-bg;
 }
 
 .link {
@@ -18,7 +19,6 @@
   &::before {
     @include trans;
     position: absolute;
-    z-index: -1;
     top: 0;
     left: 0;
     opacity: 0;
